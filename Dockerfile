@@ -23,9 +23,9 @@ RUN set-cont-env APP_NAME "MKV Muxing Batch GUI" \
 
 # Download mkv-muxing-batch-gui
 WORKDIR /app
-RUN git clone https://github.com/yaser01/mkv-muxing-batch-gui.git \
+RUN git clone https://github.com/paladzin/mkv-muxing-batch-gui.git \
     && cd mkv-muxing-batch-gui \
     && git checkout develop-pyside2 \
     && rm -rf .git && rm -rf ./Resources/Tools
 
-LABEL org.opencontainers.image.source=https://github.com/captmicr0/mkv-muxing-batch-gui-docker
+LABEL org.opencontainers.image.source=https://github.com/paladzin/mkv-muxing-batch-gui-docker
